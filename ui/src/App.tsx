@@ -1,4 +1,4 @@
-import { ColorThesis } from './components/ColorThesis'
+import { ColorThesis } from './examples/ColorThesis'
 import './index.scss'
 
 function App() {
