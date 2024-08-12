@@ -1,3 +1,3 @@
-# White Label Components
+# White Label Components / UI
 
-Robust and flexible components for building multi design applications.
+Storybook based components application.
