@@ -1,0 +1,56 @@
+:root {
+  @include light-theme;
+}
+
+* {
+  min-width: 0;
+  font: inherit;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video, svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100dvh;
+  background-color: $c-body;
+  font-family: sans-serif;
+  font-size: $fs-base;
+  padding: $s10;
+  color: $c-text;
+
+  @media (prefers-color-scheme: dark) {
+    @include dark-theme;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: $fs-lg;
+  font-weight: $fw-bold;
+  margin-top: 0;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+b {
+  font-weight: $fw-bold;
+}
+
+pre {
+  font-family: monospace;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,26 @@
+// base
+$c-white: var(--c-white);
+$c-black: var(--c-black);
+
+// grayscale
+$c-grey-8: var(--c-grey-8);
+$c-grey-6: var(--c-grey-6);
+$c-grey-4: var(--c-grey-4);
+$c-grey-2: var(--c-grey-2);
+
+// primary
+$c-primary: var(--c-primary);
+$c-primary-hover: var(--c-primary-hover);
+$c-primary-dark: var(--c-primary-dark);
+
+// text
+$c-text: var(--c-text);
+$c-text-light: var(--c-text-light);
+$c-text-white: var(--c-text-white);
+
+// body
+$c-body: var(--c-body);
+
+// borders
+$c-border: $c-grey-4;
+$c-outline: $c-primary;

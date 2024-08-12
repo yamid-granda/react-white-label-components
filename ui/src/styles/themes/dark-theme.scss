@@ -1,0 +1,19 @@
+@mixin dark-theme {
+  --c-white: #757575;
+  --c-black: #000;
+
+  --c-grey-8: #616161;
+  --c-grey-6: #424242;
+  --c-grey-4: #212121;
+  --c-grey-2: var(--c-black);
+
+  --c-primary: #1e88e5;
+  --c-primary-hover: #42a5f5;
+  --c-primary-dark: #1565c0;
+
+  --c-text: #fff;
+  --c-text-light: #cbd5e1;
+  --c-text-white: #fff;
+
+  --c-body: var(--c-grey-2);
+}

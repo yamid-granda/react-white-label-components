@@ -1,0 +1,27 @@
+.wl-button__button {
+  min-height: $input-height;
+  border: $border-base;
+  border-radius: $border-radius-base;
+  padding: $s2 $input-gutter;
+  cursor: pointer;
+  background-color: $c-grey-8;
+  transition: $transition-base;
+  color: $c-text;
+
+  &:hover {
+    background-color: $c-white;
+  }
+}
+
+// modifiers
+.wl-button--primary {
+  .wl-button__button {
+    background-color: $c-primary;
+    color: $c-text-white;
+    border-color: $c-primary-dark;
+
+    &:hover {
+      background-color: $c-primary-hover;
+    }
+  }
+}
