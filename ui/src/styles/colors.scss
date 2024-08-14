@@ -1,17 +1,16 @@
 // base
 $c-white: var(--c-white);
 $c-black: var(--c-black);
+$c-always-white: #fff;
 
 // grayscale
 $c-grey-8: var(--c-grey-8);
 $c-grey-6: var(--c-grey-6);
 $c-grey-4: var(--c-grey-4);
-$c-grey-2: var(--c-grey-2);
 
 // primary
 $c-primary: var(--c-primary);
-$c-primary-hover: var(--c-primary-hover);
-$c-primary-dark: var(--c-primary-dark);
+$c-primary-light: var(--c-primary-light);
 
 // text
 $c-text: var(--c-text);

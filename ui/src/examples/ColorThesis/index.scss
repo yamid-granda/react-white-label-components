@@ -1,42 +1,79 @@
+$gutter: $s10;
+
 .wl-color-thesis {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: $c-black;
+  padding: $gutter;
+  gap: $gutter;
+  border-radius: $border-radius-base;
 
-  div {
-    padding: $s4;
+  @media (prefers-color-scheme: dark) {
+    background-color: $c-always-white;
   }
+}
 
-  .wl-color-thesis__white {
-    background-color: $c-white;
-  }
+.wl-color-thesis__example {
+  padding: $s6;
+  border: $border-base;
+  gap: $s4;
+  border-radius: $border-radius-base;
 
-  .wl-color-thesis__grey-8 {
-    background-color: $c-grey-8;
+  & + & {
+    margin-top: $s4;
   }
+}
 
-  .wl-color-thesis__grey-6 {
-    background-color: $c-grey-6;
-  }
+.wl-color-thesis__white {
+  background-color: $c-white;
+}
 
-  .wl-color-thesis__grey-4 {
-    background-color: $c-grey-4;
-  }
+.wl-color-thesis__grey-8 {
+  background-color: $c-grey-8;
+}
 
-  .wl-color-thesis__grey-2 {
-    background-color: $c-grey-2;
-  }
+.wl-color-thesis__grey-6 {
+  background-color: $c-grey-6;
+}
 
-  .wl-color-thesis__black {
-    background-color: $c-black;
+.wl-color-thesis__grey-4 {
+  background-color: $c-grey-4;
+}
+
+.wl-color-thesis__black {
+  background-color: $c-black;
+  color: $c-always-white;
+}
+
+.wl-color-thesis__primary {
+  background-color: $c-primary;
+  transition: $transition-base;
+  cursor: pointer;
+  color: $c-always-white;
+
+  border-color: $c-primary;
+
+  &:hover {
+    background-color: $c-primary-light;
   }
+}
+
+.wl-color-thesis__light-text {
+  color: $c-text-light;
 }
 
 .wl-color-thesis__light {
   @include light-theme;
-  color: $c-text;
 }
 
 .wl-color-thesis__dark {
   @include dark-theme;
+}
+
+.wl-color-thesis__light,
+.wl-color-thesis__dark {
   color: $c-text;
+  background-color: $c-body;
+  padding: $s6;
+  border-radius: $border-radius-base;
 }

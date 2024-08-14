@@ -18,10 +18,10 @@
   .wl-button__button {
     background-color: $c-primary;
     color: $c-text-white;
-    border-color: $c-primary-dark;
+    border-color: $c-primary;
 
     &:hover {
-      background-color: $c-primary-hover;
+      background-color: $c-primary-light;
     }
   }
 }
