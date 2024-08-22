@@ -1,0 +1,38 @@
+.wl-todo-item {
+  display: flex;
+  min-height: $input-height;
+  align-items: center;
+  background-color: $c-white;
+  padding: 0 $s2 0 $s4;
+  font-size: $fs-md-sm;
+
+  & + & {
+    margin-top: $s2;
+  }
+}
+
+.wl-todo-item__checkbox {
+  margin-right: $s3;
+}
+
+.wl-todo-item__due-date {
+  border: $border-base;
+  height: $s7;
+  display: flex;
+  align-items: center;
+  padding: 0 $s2;
+  margin-left: auto;
+}
+
+// modifiers
+.wl-todo-item--completed {
+  background-color: $c-success;
+
+  .wl-todo-item__description {
+    text-decoration: line-through;
+  }
+}
+
+.wl-todo-item--overdue {
+  background-color: $c-error;
+}

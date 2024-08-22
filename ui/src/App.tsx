@@ -1,9 +1,9 @@
-import { ColorThesis } from './examples/ColorThesis'
+import { TodosApp } from './examples/TodosApp'
 import './index.scss'
 
 function App() {
   return (
-    <ColorThesis />
+    <TodosApp />
   )
 }
 
