@@ -1,3 +1,7 @@
+.wl-button {
+  user-select: none;
+}
+
 .wl-button__button {
   min-height: $input-height;
   border: $border-base;
@@ -7,13 +11,31 @@
   background-color: $c-grey-8;
   transition: $transition-base;
   color: $c-text;
+  outline: $outline-base;
 
   &:hover {
     background-color: $c-white;
   }
+
+  &:focus {
+    outline-color: $c-outline;
+  }
+}
+
+.wl-button__content {
+  display: flex;
+}
+
+.wl-button__loader {
+  margin-left: -$s3;
 }
 
 // modifiers
+.wl-button--loading {
+  pointer-events: none;
+  opacity: $opacity-disabled  ;
+}
+
 .wl-button--primary {
   .wl-button__button {
     background-color: $c-primary;
