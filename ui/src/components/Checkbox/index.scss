@@ -1,0 +1,57 @@
+$size: math.div($input-height, 2);
+
+.wl-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  min-height: $size;
+  min-width: $size;
+}
+
+.wl-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.wl-checkbox__check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $size;
+  width: $size;
+  background-color: $c-always-white;
+  cursor: pointer;
+}
+
+.wl-checkbox:hover input~.wl-checkbox__check {
+}
+
+.wl-checkbox input:checked~.wl-checkbox__check {
+  background-color: $c-primary;
+}
+
+.wl-checkbox__check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.wl-checkbox input:checked~.wl-checkbox__check:after {
+  display: block;
+}
+
+.wl-checkbox .wl-checkbox__check:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid $c-always-white;
+  border-width: 0 $s-double $s-double 0;
+  transform: rotate(45deg);
+}
