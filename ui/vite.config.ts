@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: [
-      { find: '@/ui', replacement: path.resolve(__dirname, './src/') },
+      { find: '@ui', replacement: path.resolve(__dirname, './src/') },
     ],
   },
   css: {
@@ -15,7 +15,7 @@ export default defineConfig({
       scss: {
         additionalData: `
           @use 'sass:math';
-          @use "@/ui/styles/index" as *;
+          @use "@ui/styles/index" as *;
         `,
       },
     },
