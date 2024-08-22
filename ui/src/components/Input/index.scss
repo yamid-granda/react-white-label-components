@@ -1,0 +1,22 @@
+.wl-input__input {
+  height: $input-height;
+  border-radius: $border-radius-base;
+  border: $border-base;
+  background-color: $c-white;
+  transition: $transition-base;
+  outline: 0;
+  padding: $input-gutter;
+  width: 100%;
+  outline: $outline-base;
+  color: $c-text;
+
+  &:focus {
+    outline-color: $c-outline;
+  }
+}
+
+.wl-input__label {
+  font-size: $fs-sm;
+  margin-bottom: $s1;
+  display: inline-block;
+}
