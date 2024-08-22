@@ -40,8 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: $fs-lg;
-  font-weight: $fw-bold;
-  margin-top: 0;
+}
+
+h2 {
+  font-size: $fs-md;
 }
 
 p {
@@ -55,4 +57,8 @@ b {
 pre {
   font-family: monospace;
   white-space: pre-wrap;
+}
+
+input {
+  margin: 0;
 }
