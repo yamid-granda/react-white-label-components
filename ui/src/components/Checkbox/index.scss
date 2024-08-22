@@ -27,12 +27,10 @@ $size: math.div($input-height, 2);
   width: $size;
   background-color: $c-always-white;
   cursor: pointer;
+  border: $border-base;
 }
 
-.wl-checkbox:hover input~.wl-checkbox__check {
-}
-
-.wl-checkbox input:checked~.wl-checkbox__check {
+.wl-checkbox input:checked ~ .wl-checkbox__check {
   background-color: $c-primary;
 }
 
@@ -47,8 +45,8 @@ $size: math.div($input-height, 2);
 }
 
 .wl-checkbox .wl-checkbox__check:after {
-  left: 7px;
-  top: 3px;
+  left: 6px;
+  top: 2px;
   width: 6px;
   height: 12px;
   border: solid $c-always-white;

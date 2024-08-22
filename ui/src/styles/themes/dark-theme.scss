@@ -1,14 +1,26 @@
 @mixin dark-theme {
+  // base
   --c-white: #616161;
   --c-black: #000;
 
+  // grayscale
   --c-grey-8: #424242;
   --c-grey-6: #212121;
   --c-grey-4: var(--c-black);
 
+  // primary
   --c-text: #fff;
   --c-text-light: #bdbdbd;
   --c-text-white: #fff;
 
+  // success
+  // transform this color #cdffcb to dark theme version
+  --c-success: #1b5e20;
+
+  // error
+  // transform this color #ffcccc to dark theme version
+  --c-error: #b71c1c ;
+
+  // body
   --c-body: var(--c-grey-6);
 }
